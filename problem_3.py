@@ -8,6 +8,12 @@ def problem_three():
     result = 0
     primes = [2]
 
+    if n % 2 == 0:
+        if n % 2 == 1:
+            return 2 
+        else:
+            n /= 2
+
     result = determine_primes(primes, n)
     print result
 
@@ -20,7 +26,8 @@ def determine_primes(primes, n):
             if n % i == 0:
                 if n / i == 1:
                     return i
-                n /= i
+                else:
+                    n /= i
 
 def is_prime(primes , n):
     for num in primes:
