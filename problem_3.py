@@ -19,7 +19,7 @@ def problem_three():
 
 
 def determine_primes(primes, n):
-    for i in xrange(3, int(math.sqrt(n)), 2):
+    for i in xrange(3, n, 2):
         if is_prime(primes, i):
             pass
         else:    
