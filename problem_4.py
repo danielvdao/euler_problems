@@ -2,7 +2,7 @@ def problem_four():
     max_product = 0 
     
     for i in xrange(100, 1000):
-        for j in xrange(100, 1000):
+        for j in xrange(i, 1000):
             cur = i * j
             if is_palindrome(cur) and cur > max_product:
                 max_product = cur
