@@ -9,9 +9,6 @@ def problem_four():
 
     print max_product
 
-
-
-
 def is_palindrome(num):
     str_num = str(num)
     beg = 0
